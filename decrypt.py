@@ -11,7 +11,7 @@ constMatrix = [
 encryptedData = [
 	[138, 81, 102],
 	[101, 67, 109],
-	[162, 123, 173],
+	[162, 124, 173],
 	[210, 150, 165],
 ]
 
@@ -27,7 +27,7 @@ def multiplyMatrixes(a,b):
 		while i < len(a):
 			for subIndex in xrange(len(a[i])):
 				result[i][j] += a[i][subIndex] * b[subIndex][j]
-			result[i][j] = int(result[i][j])
+			result[i][j] = int(round(result[i][j]))
 			i += 1
 		i = 0
 		j += 1
